@@ -1,18 +1,14 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="nbspace" format="2">
-  <advance width="300"/>
-  <unicode hex="00A0"/>
-  <note>
+	<unicode hex="00A0"/>
+	<advance width="300"/>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
+			<string>space</string>
+		</dict>
+	</lib>
+	<note>
 uni00A0
 </note>
-  <outline>
-  </outline>
-  <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
-      <string>space</string>
-      <key>com.schriftgestaltung.Glyphs.lastChange</key>
-      <string>2020/05/27 05:59:50</string>
-    </dict>
-  </lib>
 </glyph>
