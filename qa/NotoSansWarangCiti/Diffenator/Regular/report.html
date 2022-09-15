@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>GFR - Glyphs</title>
+    
+    <style type="text/css">
+    
+
+        html{
+	  font-family: sans-serif;
+	}
+	.box-title{
+	  width: 100%;
+	  float: left;
+	  font-size: 8pt;
+	  font-weight: 700;
+	  border-top: 1px solid black;
+	  padding-top: 5px;
+	  margin-bottom: 10pt;
+	  display: block;
+	}
+	.box{
+	  margin-bottom: 20pt;
+	}
+	
+	#nav{
+	  position: fixed;
+	  right: 20px;
+	  z-index: 100;
+	}
+	#font-toggle{
+	  display: block;
+	  font-weight: 700;
+	  cursor: pointer;
+	  -webkit-user-select: none; /* Safari */        
+	  -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* IE10+/Edge */
+	  user-select: none; /* Standard */
+	  text-align: center;
+	  color: white;
+	  background-color: black;
+	  width: 50px;
+	  display: block;
+	  padding: 10px;
+	}
+	.tooltip {
+	z-index: 1;
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+	}
+
+	.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	font-size: 10pt;
+	line-height: 13pt;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1000;
+	}
+	.tooltip .tooltiptext {
+  width: 120px;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+	.tooltip:hover .tooltiptext {
+	visibility: visible;
+	}
+	           /* Stuff needed for the table differ */
+            body {
+                font-family: Helvetica;
+            }
+            .node {
+                font-family: courier;
+                cursor: pointer;
+                position: relative;
+                left: 30px;
+                padding: 5px;
+                display: block;
+                border: 1px dashed grey;
+            }
+            .header {
+            font-weight: bold;
+            }
+            .attrib-before{
+                color: red;
+                cursor: text;
+            }
+            .attrib-after{
+                color: green;
+                cursor: text;
+            }
+            .leaf {
+            font-weight: bold;
+            }
+            .before .cell .after {
+            	display:  none;
+            }
+            .after .cell .before {
+            	display:  none;
+            }
+            .both .cell .before {
+            	opacity: 0.75;
+            	color:  red;
+            }
+            .both .cell .after {
+            	opacity: 0.75;
+            	position: absolute;
+            	top: 0;
+            	color:  green;
+            }
+
+	  
+	    @font-face { font-family: before; src: url(before.ttf); }
+	  
+
+	  
+	    @font-face { font-family: after; src: url(after.ttf); }
+	  
+
+	  
+
+	  
+	    .before { font-family: before; }
+	  
+
+	  
+	    .after { font-family: after; }
+	  
+
+	  
+	
+.cell{
+  position: relative;
+  z-index: -100;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  line-height: 48.0px;
+}
+.cat-strings .cell {
+  clear: both;
+  position: static;
+  float: none;
+  text-align: left;
+}
+.box-title {
+  clear: both;
+}
+
+    </style>
+</head>
+<body>
+    
+    <div id="nav">
+        <div id="font-toggle">Before</div>
+     </div>
+    
+    <div id="content">
+	<h2>
+<b>Diffenator</b>
+</h2>
+	
+  
+    <div class="box">
+    <div class="box-title">Tables</div>
+     
+<div class="node" >
+GSUB
+  <div class="node" style="display:none">
+  table
+    <div class="node" style="display:none">
+    ScriptList
+      <div class="node" style="display:none">
+      ScriptCount
+        <span class="attrib-before">1</span> <span class="attrib-after">2</span>
+      </div>
+      <div class="node" style="display:none">
+      ScriptRecord
+        <div class="node" style="display:none">
+        [0]
+          <div class="node" style="display:none">
+          ScriptTag
+            <span class="attrib-before">wara</span> <span class="attrib-after">DFLT</span>
+          </div>
+        </div>
+        <div class="node" style="display:none">
+        [1]
+          <div class="node" style="display:none">
+          ScriptTag
+            <span class="attrib-before">None</span> <span class="attrib-after">wara</span>
+          </div>
+          <div class="node" style="display:none">
+          Script
+            <div class="node" style="display:none">
+            DefaultLangSys
+              <div class="node" style="display:none">
+              ReqFeatureIndex
+                <span class="attrib-before">None</span> <span class="attrib-after">65535</span>
+              </div>
+              <div class="node" style="display:none">
+              FeatureCount
+                <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+              </div>
+              <div class="node" style="display:none">
+              FeatureIndex
+                <div class="node" style="display:none">
+                [0]
+                  <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+                </div>
+              </div>
+            </div>
+            <div class="node" style="display:none">
+            LangSysCount
+              <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="node" >
+head
+  <div class="node" style="display:none">
+  yMin
+    <span class="attrib-before">-74</span> <span class="attrib-after">-100</span>
+  </div>
+  <div class="node" style="display:none">
+  fontRevision
+    <span class="attrib-before">3.001007080078125</span> <span class="attrib-after">3.0019989013671875</span>
+  </div>
+  <div class="node" style="display:none">
+  yMax
+    <span class="attrib-before">830</span> <span class="attrib-after">1042</span>
+  </div>
+  <div class="node" style="display:none">
+  modified
+    <span class="attrib-before">3745238274</span> <span class="attrib-after">3746099441</span>
+  </div>
+  <div class="node" style="display:none">
+  checkSumAdjustment
+    <span class="attrib-before">1954094242</span> <span class="attrib-after">2840808296</span>
+  </div>
+</div>
+<div class="node" >
+hmtx
+  <div class="node" style="display:none">
+  metrics
+    <div class="node" style="display:none">
+    .notdef
+      <div class="node" style="display:none">
+      [0]
+        <span class="attrib-before">600</span> <span class="attrib-after">500</span>
+      </div>
+      <div class="node" style="display:none">
+      [1]
+        <span class="attrib-before">94</span> <span class="attrib-after">50</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="node" >
+OS/2
+  <div class="node" style="display:none">
+  xAvgCharWidth
+    <span class="attrib-before">619</span> <span class="attrib-after">618</span>
+  </div>
+</div>
+<div class="node" >
+GPOS
+  <div class="node" style="display:none">
+  table
+    <div class="node" style="display:none">
+    ScriptList
+      <div class="node" style="display:none">
+      ScriptCount
+        <span class="attrib-before">1</span> <span class="attrib-after">2</span>
+      </div>
+      <div class="node" style="display:none">
+      ScriptRecord
+        <div class="node" style="display:none">
+        [0]
+          <div class="node" style="display:none">
+          ScriptTag
+            <span class="attrib-before">wara</span> <span class="attrib-after">DFLT</span>
+          </div>
+        </div>
+        <div class="node" style="display:none">
+        [1]
+          <div class="node" style="display:none">
+          ScriptTag
+            <span class="attrib-before">None</span> <span class="attrib-after">wara</span>
+          </div>
+          <div class="node" style="display:none">
+          Script
+            <div class="node" style="display:none">
+            DefaultLangSys
+              <div class="node" style="display:none">
+              ReqFeatureIndex
+                <span class="attrib-before">None</span> <span class="attrib-after">65535</span>
+              </div>
+              <div class="node" style="display:none">
+              FeatureCount
+                <span class="attrib-before">None</span> <span class="attrib-after">2</span>
+              </div>
+              <div class="node" style="display:none">
+              FeatureIndex
+                <div class="node" style="display:none">
+                [0]
+                  <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+                </div>
+                <div class="node" style="display:none">
+                [1]
+                  <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+                </div>
+              </div>
+            </div>
+            <div class="node" style="display:none">
+            LangSysCount
+              <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="node" >
+GDEF
+  <div class="node" style="display:none">
+  table
+    <div class="node" style="display:none">
+    GlyphClassDef
+      <div class="node" style="display:none">
+      classDefs
+        <div class="node" style="display:none">
+        sii_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        sixty_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        nung_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        YUJ_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        ENN_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        eighty_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        uc_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        ANG_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        uni00A0
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        yo_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        e_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        om_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        eny_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        thirty_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        ngaa_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        NULL
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        zero_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        II_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        O_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        AT_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        ga_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        viyo_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        at_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        ten_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        wi_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        ZWNJ
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        three_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        har_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        YO_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        five_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        uu_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        pu_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        a_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        am_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        ZWJ
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        eight_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        DA_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        PU_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        WI_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        E_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        AM_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        ii_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        seventy_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        nine_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        two_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        VIYO_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        tte_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        fifty_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        HORR_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        ninety_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        ang_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        twenty_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        quotesingle
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        UU_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        KO_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        ko_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        yuj_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        enn_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        o_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        bu_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        four_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        SII_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        space
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        GA_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        TTE_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        NGAA_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        UC_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        HIYO_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        ssuu_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        A_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        forty_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        HAR_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        ya_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        YU_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        ODD_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        holo_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        HOLO_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        hiyo_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        ENY_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        one_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        BU_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        yu_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        six_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        seven_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        CR
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        SSUU_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        horr_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        odd_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        da_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+        <div class="node" style="display:none">
+        YA_wara
+          <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="node" >
+name
+  <div class="node" style="display:none">
+  (3, 3, 1, 1033)
+    <span class="attrib-before">3.001;GOOG;NotoSansWarangCiti-Regular</span> <span class="attrib-after">3.002;GOOG;NotoSansWarangCiti-Regular</span>
+  </div>
+  <div class="node" style="display:none">
+  (5, 3, 1, 1033)
+    <span class="attrib-before">Version 3.001</span> <span class="attrib-after">Version 3.002</span>
+  </div>
+</div>
+    </div>
+	    
+       </div>
+    
+    </div>
+
+    
+    <div class="box">
+      <div class="box-title">Fea</div>
+      
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type"
+          content="text/html; charset=utf-8" />
+    <title></title>
+    <style type="text/css">
+        table.diff {font-family:Courier; border:medium;}
+        .diff_header {background-color:#e0e0e0}
+        td.diff_header {text-align:right}
+        .diff_next {background-color:#c0c0c0}
+        .diff_add {background-color:#aaffaa}
+        .diff_chg {background-color:#ffff77}
+        .diff_sub {background-color:#ffaaaa}
+    </style>
+</head>
+
+<body>
+    
+    <table class="diff" id="difflib_chg_to0__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        
+        <tbody>
+            <tr><td class="diff_next" id="difflib_chg_to0__0"><a href="#difflib_chg_to0__1">n</a></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"><a href="#difflib_chg_to0__1">n</a></td><td class="diff_header" id="to0_1">1</td><td nowrap="nowrap"><span class="diff_add">languagesystem&nbsp;DFLT&nbsp;dflt;</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_2">2</td><td nowrap="nowrap"><span class="diff_add">languagesystem&nbsp;wara&nbsp;dflt;</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_1">1</td><td nowrap="nowrap">table&nbsp;GDEF&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to0_3">3</td><td nowrap="nowrap">table&nbsp;GDEF&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_2">2</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;GlyphClassDef&nbsp;[],&nbsp;[],&nbsp;[],&nbsp;[];</td><td class="diff_next"></td><td class="diff_header" id="to0_4">4</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;GlyphClassDef&nbsp;[],&nbsp;[],&nbsp;[],&nbsp;[];</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_3">3</td><td nowrap="nowrap">}&nbsp;GDEF;</td><td class="diff_next"></td><td class="diff_header" id="to0_5">5</td><td nowrap="nowrap">}&nbsp;GDEF;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_4">4</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_6">6</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_5">5</td><td nowrap="nowrap">@class1&nbsp;=&nbsp;[AM_wara&nbsp;ANG_wara&nbsp;AT_wara&nbsp;A_wara&nbsp;BU_wara&nbsp;DA_wara&nbsp;ENN_wara&nbsp;ENY_wara&nbsp;E_w</td><td class="diff_next"></td><td class="diff_header" id="to0_7">7</td><td nowrap="nowrap">@class1&nbsp;=&nbsp;[AM_wara&nbsp;ANG_wara&nbsp;AT_wara&nbsp;A_wara&nbsp;BU_wara&nbsp;DA_wara&nbsp;ENN_wara&nbsp;ENY_wara&nbsp;E_w</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">ara&nbsp;GA_wara&nbsp;HAR_wara&nbsp;HIYO_wara&nbsp;HOLO_wara&nbsp;HORR_wara&nbsp;II_wara&nbsp;KO_wara&nbsp;NUNG_wara&nbsp;ODD</td><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">ara&nbsp;GA_wara&nbsp;HAR_wara&nbsp;HIYO_wara&nbsp;HOLO_wara&nbsp;HORR_wara&nbsp;II_wara&nbsp;KO_wara&nbsp;NUNG_wara&nbsp;ODD</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">_wara&nbsp;O_wara&nbsp;PU_wara&nbsp;SII_wara&nbsp;SSUU_wara&nbsp;TTE_wara&nbsp;UC_wara&nbsp;UU_wara&nbsp;VIYO_wara&nbsp;WI_wa</td><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">_wara&nbsp;O_wara&nbsp;PU_wara&nbsp;SII_wara&nbsp;SSUU_wara&nbsp;TTE_wara&nbsp;UC_wara&nbsp;UU_wara&nbsp;VIYO_wara&nbsp;WI_wa</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">ra&nbsp;YA_wara&nbsp;YO_wara&nbsp;YUJ_wara&nbsp;YU_wara&nbsp;a_wara&nbsp;am_wara&nbsp;ang_wara&nbsp;at_wara&nbsp;bu_wara&nbsp;da_w</td><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">ra&nbsp;YA_wara&nbsp;YO_wara&nbsp;YUJ_wara&nbsp;YU_wara&nbsp;a_wara&nbsp;am_wara&nbsp;ang_wara&nbsp;at_wara&nbsp;bu_wara&nbsp;da_w</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">ara&nbsp;e_wara&nbsp;enn_wara&nbsp;eny_wara&nbsp;ga_wara&nbsp;har_wara&nbsp;hiyo_wara&nbsp;holo_wara&nbsp;horr_wara&nbsp;ii_w</td><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">ara&nbsp;e_wara&nbsp;enn_wara&nbsp;eny_wara&nbsp;ga_wara&nbsp;har_wara&nbsp;hiyo_wara&nbsp;holo_wara&nbsp;horr_wara&nbsp;ii_w</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">ara&nbsp;ko_wara&nbsp;nung_wara&nbsp;o_wara&nbsp;odd_wara&nbsp;pu_wara&nbsp;sii_wara&nbsp;ssuu_wara&nbsp;tte_wara&nbsp;uc_war</td><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">ara&nbsp;ko_wara&nbsp;nung_wara&nbsp;o_wara&nbsp;odd_wara&nbsp;pu_wara&nbsp;sii_wara&nbsp;ssuu_wara&nbsp;tte_wara&nbsp;uc_war</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">a&nbsp;uu_wara&nbsp;viyo_wara&nbsp;wi_wara&nbsp;ya_wara&nbsp;yo_wara&nbsp;yu_wara&nbsp;yuj_wara];</td><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">a&nbsp;uu_wara&nbsp;viyo_wara&nbsp;wi_wara&nbsp;ya_wara&nbsp;yo_wara&nbsp;yu_wara&nbsp;yuj_wara];</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_6">6</td><td nowrap="nowrap">@class2&nbsp;=&nbsp;[AM_wara&nbsp;ANG_wara&nbsp;AT_wara&nbsp;BU_wara&nbsp;DA_wara&nbsp;ENN_wara&nbsp;ENY_wara&nbsp;GA_wara&nbsp;HA</td><td class="diff_next"></td><td class="diff_header" id="to0_8">8</td><td nowrap="nowrap">@class2&nbsp;=&nbsp;[AM_wara&nbsp;ANG_wara&nbsp;AT_wara&nbsp;BU_wara&nbsp;DA_wara&nbsp;ENN_wara&nbsp;ENY_wara&nbsp;GA_wara&nbsp;HA</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">R_wara&nbsp;HIYO_wara&nbsp;HOLO_wara&nbsp;HORR_wara&nbsp;KO_wara&nbsp;NGAA_wara&nbsp;NUNG_wara&nbsp;ODD_wara&nbsp;PU_war</td><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">R_wara&nbsp;HIYO_wara&nbsp;HOLO_wara&nbsp;HORR_wara&nbsp;KO_wara&nbsp;NGAA_wara&nbsp;NUNG_wara&nbsp;ODD_wara&nbsp;PU_war</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">a&nbsp;SII_wara&nbsp;SSUU_wara&nbsp;TTE_wara&nbsp;UC_wara&nbsp;VIYO_wara&nbsp;YUJ_wara&nbsp;am_wara&nbsp;ang_wara&nbsp;at_war</td><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">a&nbsp;SII_wara&nbsp;SSUU_wara&nbsp;TTE_wara&nbsp;UC_wara&nbsp;VIYO_wara&nbsp;YUJ_wara&nbsp;am_wara&nbsp;ang_wara&nbsp;at_war</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">a&nbsp;bu_wara&nbsp;da_wara&nbsp;enn_wara&nbsp;eny_wara&nbsp;ga_wara&nbsp;har_wara&nbsp;hiyo_wara&nbsp;holo_wara&nbsp;horr_wa</td><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">a&nbsp;bu_wara&nbsp;da_wara&nbsp;enn_wara&nbsp;eny_wara&nbsp;ga_wara&nbsp;har_wara&nbsp;hiyo_wara&nbsp;holo_wara&nbsp;horr_wa</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">ra&nbsp;ko_wara&nbsp;ngaa_wara&nbsp;nung_wara&nbsp;odd_wara&nbsp;pu_wara&nbsp;sii_wara&nbsp;ssuu_wara&nbsp;tte_wara&nbsp;uc_w</td><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">ra&nbsp;ko_wara&nbsp;ngaa_wara&nbsp;nung_wara&nbsp;odd_wara&nbsp;pu_wara&nbsp;sii_wara&nbsp;ssuu_wara&nbsp;tte_wara&nbsp;uc_w</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">ara&nbsp;viyo_wara&nbsp;yuj_wara];</td><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">ara&nbsp;viyo_wara&nbsp;yuj_wara];</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_7">7</td><td nowrap="nowrap">@class4&nbsp;=&nbsp;[AM_wara.sm&nbsp;ANG_wara.sm&nbsp;AT_wara.sm&nbsp;A_wara.sm&nbsp;BU_wara.sm&nbsp;DA_wara.sm&nbsp;ENN</td><td class="diff_next"></td><td class="diff_header" id="to0_9">9</td><td nowrap="nowrap">@class4&nbsp;=&nbsp;[AM_wara.sm&nbsp;ANG_wara.sm&nbsp;AT_wara.sm&nbsp;A_wara.sm&nbsp;BU_wara.sm&nbsp;DA_wara.sm&nbsp;ENN</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">_wara.sm&nbsp;ENY_wara.sm&nbsp;E_wara.sm&nbsp;GA_wara.sm&nbsp;HAR_wara.sm&nbsp;HIYO_wara.sm&nbsp;HOLO_wara.sm&nbsp;</td><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">_wara.sm&nbsp;ENY_wara.sm&nbsp;E_wara.sm&nbsp;GA_wara.sm&nbsp;HAR_wara.sm&nbsp;HIYO_wara.sm&nbsp;HOLO_wara.sm&nbsp;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">HORR_wara.sm&nbsp;II_wara.sm&nbsp;KO_wara.sm&nbsp;NUNG_wara.sm&nbsp;ODD_wara.sm&nbsp;O_wara.sm&nbsp;PU_wara.sm</td><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">HORR_wara.sm&nbsp;II_wara.sm&nbsp;KO_wara.sm&nbsp;NUNG_wara.sm&nbsp;ODD_wara.sm&nbsp;O_wara.sm&nbsp;PU_wara.sm</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">&nbsp;SII_wara.sm&nbsp;SSUU_wara.sm&nbsp;TTE_wara.sm&nbsp;UC_wara.sm&nbsp;UU_wara.sm&nbsp;VIYO_wara.sm&nbsp;WI_wara</td><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">&nbsp;SII_wara.sm&nbsp;SSUU_wara.sm&nbsp;TTE_wara.sm&nbsp;UC_wara.sm&nbsp;UU_wara.sm&nbsp;VIYO_wara.sm&nbsp;WI_wara</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">.sm&nbsp;YA_wara.sm&nbsp;YO_wara.sm&nbsp;YUJ_wara.sm&nbsp;YU_wara.sm&nbsp;a_wara.sm&nbsp;am_wara.sm&nbsp;ang_wara.s</td><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">.sm&nbsp;YA_wara.sm&nbsp;YO_wara.sm&nbsp;YUJ_wara.sm&nbsp;YU_wara.sm&nbsp;a_wara.sm&nbsp;am_wara.sm&nbsp;ang_wara.s</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">m&nbsp;at_wara.sm&nbsp;bu_wara.sm&nbsp;da_wara.sm&nbsp;e_wara.sm&nbsp;enn_wara.sm&nbsp;eny_wara.sm&nbsp;ga_wara.sm&nbsp;</td><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">m&nbsp;at_wara.sm&nbsp;bu_wara.sm&nbsp;da_wara.sm&nbsp;e_wara.sm&nbsp;enn_wara.sm&nbsp;eny_wara.sm&nbsp;ga_wara.sm&nbsp;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">har_wara.sm&nbsp;hiyo_wara.sm&nbsp;holo_wara.sm&nbsp;horr_wara.sm&nbsp;ii_wara.sm&nbsp;ko_wara.sm&nbsp;nung_wa</td><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">har_wara.sm&nbsp;hiyo_wara.sm&nbsp;holo_wara.sm&nbsp;horr_wara.sm&nbsp;ii_wara.sm&nbsp;ko_wara.sm&nbsp;nung_wa</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">ra.sm&nbsp;o_wara.sm&nbsp;odd_wara.sm&nbsp;pu_wara.sm&nbsp;sii_wara.sm&nbsp;ssuu_wara.sm&nbsp;tte_wara.sm&nbsp;uc_w</td><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">ra.sm&nbsp;o_wara.sm&nbsp;odd_wara.sm&nbsp;pu_wara.sm&nbsp;sii_wara.sm&nbsp;ssuu_wara.sm&nbsp;tte_wara.sm&nbsp;uc_w</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">ara.sm&nbsp;uu_wara.sm&nbsp;viyo_wara.sm&nbsp;wi_wara.sm&nbsp;ya_wara.sm&nbsp;yo_wara.sm&nbsp;yu_wara.sm&nbsp;yuj_w</td><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">ara.sm&nbsp;uu_wara.sm&nbsp;viyo_wara.sm&nbsp;wi_wara.sm&nbsp;ya_wara.sm&nbsp;yo_wara.sm&nbsp;yu_wara.sm&nbsp;yuj_w</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">ara.sm];</td><td class="diff_next"></td><td class="diff_header">></td><td nowrap="nowrap">ara.sm];</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_8">8</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_10">10</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_9">9</td><td nowrap="nowrap">lookup&nbsp;LigatureSubstitution1&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to0_11">11</td><td nowrap="nowrap">lookup&nbsp;LigatureSubstitution1&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_10">10</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;lookupflag&nbsp;0;</td><td class="diff_next"></td><td class="diff_header" id="to0_12">12</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;lookupflag&nbsp;0;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_11">11</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;;</td><td class="diff_next"></td><td class="diff_header" id="to0_13">13</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_12">12</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;A_wara&nbsp;ZWJ&nbsp;by&nbsp;A_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_14">14</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;A_wara&nbsp;ZWJ&nbsp;by&nbsp;A_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_13">13</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;WI_wara&nbsp;ZWJ&nbsp;by&nbsp;WI_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_15">15</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;WI_wara&nbsp;ZWJ&nbsp;by&nbsp;WI_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_14">14</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;YU_wara&nbsp;ZWJ&nbsp;by&nbsp;YU_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_16">16</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;YU_wara&nbsp;ZWJ&nbsp;by&nbsp;YU_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_15">15</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;YA_wara&nbsp;ZWJ&nbsp;by&nbsp;YA_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_17">17</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;YA_wara&nbsp;ZWJ&nbsp;by&nbsp;YA_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_16">16</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;YO_wara&nbsp;ZWJ&nbsp;by&nbsp;YO_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_18">18</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;YO_wara&nbsp;ZWJ&nbsp;by&nbsp;YO_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_17">17</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;II_wara&nbsp;ZWJ&nbsp;by&nbsp;II_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_19">19</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;II_wara&nbsp;ZWJ&nbsp;by&nbsp;II_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_18">18</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;UU_wara&nbsp;ZWJ&nbsp;by&nbsp;UU_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_20">20</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;UU_wara&nbsp;ZWJ&nbsp;by&nbsp;UU_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_19">19</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;E_wara&nbsp;ZWJ&nbsp;by&nbsp;E_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_21">21</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;E_wara&nbsp;ZWJ&nbsp;by&nbsp;E_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_20">20</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;O_wara&nbsp;ZWJ&nbsp;by&nbsp;O_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_22">22</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;O_wara&nbsp;ZWJ&nbsp;by&nbsp;O_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_21">21</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ANG_wara&nbsp;ZWJ&nbsp;by&nbsp;ANG_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_23">23</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ANG_wara&nbsp;ZWJ&nbsp;by&nbsp;ANG_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_22">22</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;GA_wara&nbsp;ZWJ&nbsp;by&nbsp;GA_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_24">24</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;GA_wara&nbsp;ZWJ&nbsp;by&nbsp;GA_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_23">23</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;KO_wara&nbsp;ZWJ&nbsp;by&nbsp;KO_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_25">25</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;KO_wara&nbsp;ZWJ&nbsp;by&nbsp;KO_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_24">24</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ENY_wara&nbsp;ZWJ&nbsp;by&nbsp;ENY_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_26">26</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ENY_wara&nbsp;ZWJ&nbsp;by&nbsp;ENY_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_25">25</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;YUJ_wara&nbsp;ZWJ&nbsp;by&nbsp;YUJ_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_27">27</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;YUJ_wara&nbsp;ZWJ&nbsp;by&nbsp;YUJ_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_26">26</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;UC_wara&nbsp;ZWJ&nbsp;by&nbsp;UC_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_28">28</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;UC_wara&nbsp;ZWJ&nbsp;by&nbsp;UC_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_27">27</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ENN_wara&nbsp;ZWJ&nbsp;by&nbsp;ENN_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_29">29</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ENN_wara&nbsp;ZWJ&nbsp;by&nbsp;ENN_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_28">28</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ODD_wara&nbsp;ZWJ&nbsp;by&nbsp;ODD_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_30">30</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ODD_wara&nbsp;ZWJ&nbsp;by&nbsp;ODD_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_29">29</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;TTE_wara&nbsp;ZWJ&nbsp;by&nbsp;TTE_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_31">31</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;TTE_wara&nbsp;ZWJ&nbsp;by&nbsp;TTE_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_30">30</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;NUNG_wara&nbsp;ZWJ&nbsp;by&nbsp;NUNG_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_32">32</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;NUNG_wara&nbsp;ZWJ&nbsp;by&nbsp;NUNG_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_31">31</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;DA_wara&nbsp;ZWJ&nbsp;by&nbsp;DA_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_33">33</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;DA_wara&nbsp;ZWJ&nbsp;by&nbsp;DA_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_32">32</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;AT_wara&nbsp;ZWJ&nbsp;by&nbsp;AT_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_34">34</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;AT_wara&nbsp;ZWJ&nbsp;by&nbsp;AT_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_33">33</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;AM_wara&nbsp;ZWJ&nbsp;by&nbsp;AM_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_35">35</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;AM_wara&nbsp;ZWJ&nbsp;by&nbsp;AM_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_34">34</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;BU_wara&nbsp;ZWJ&nbsp;by&nbsp;BU_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_36">36</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;BU_wara&nbsp;ZWJ&nbsp;by&nbsp;BU_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_35">35</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;PU_wara&nbsp;ZWJ&nbsp;by&nbsp;PU_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_37">37</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;PU_wara&nbsp;ZWJ&nbsp;by&nbsp;PU_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_36">36</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;HIYO_wara&nbsp;ZWJ&nbsp;by&nbsp;HIYO_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_38">38</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;HIYO_wara&nbsp;ZWJ&nbsp;by&nbsp;HIYO_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_37">37</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;HOLO_wara&nbsp;ZWJ&nbsp;by&nbsp;HOLO_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_39">39</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;HOLO_wara&nbsp;ZWJ&nbsp;by&nbsp;HOLO_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_38">38</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;HORR_wara&nbsp;ZWJ&nbsp;by&nbsp;HORR_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_40">40</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;HORR_wara&nbsp;ZWJ&nbsp;by&nbsp;HORR_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_39">39</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;HAR_wara&nbsp;ZWJ&nbsp;by&nbsp;HAR_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_41">41</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;HAR_wara&nbsp;ZWJ&nbsp;by&nbsp;HAR_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_40">40</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;SSUU_wara&nbsp;ZWJ&nbsp;by&nbsp;SSUU_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_42">42</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;SSUU_wara&nbsp;ZWJ&nbsp;by&nbsp;SSUU_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_41">41</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;SII_wara&nbsp;ZWJ&nbsp;by&nbsp;SII_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_43">43</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;SII_wara&nbsp;ZWJ&nbsp;by&nbsp;SII_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_42">42</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;VIYO_wara&nbsp;ZWJ&nbsp;by&nbsp;VIYO_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_44">44</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;VIYO_wara&nbsp;ZWJ&nbsp;by&nbsp;VIYO_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_43">43</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;a_wara&nbsp;ZWJ&nbsp;by&nbsp;a_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_45">45</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;a_wara&nbsp;ZWJ&nbsp;by&nbsp;a_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_44">44</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;wi_wara&nbsp;ZWJ&nbsp;by&nbsp;wi_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_46">46</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;wi_wara&nbsp;ZWJ&nbsp;by&nbsp;wi_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_45">45</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;yu_wara&nbsp;ZWJ&nbsp;by&nbsp;yu_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_47">47</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;yu_wara&nbsp;ZWJ&nbsp;by&nbsp;yu_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_46">46</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ya_wara&nbsp;ZWJ&nbsp;by&nbsp;ya_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_48">48</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ya_wara&nbsp;ZWJ&nbsp;by&nbsp;ya_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_47">47</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;yo_wara&nbsp;ZWJ&nbsp;by&nbsp;yo_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_49">49</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;yo_wara&nbsp;ZWJ&nbsp;by&nbsp;yo_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_48">48</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ii_wara&nbsp;ZWJ&nbsp;by&nbsp;ii_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_50">50</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ii_wara&nbsp;ZWJ&nbsp;by&nbsp;ii_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_49">49</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uu_wara&nbsp;ZWJ&nbsp;by&nbsp;uu_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_51">51</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uu_wara&nbsp;ZWJ&nbsp;by&nbsp;uu_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_50">50</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;e_wara&nbsp;ZWJ&nbsp;by&nbsp;e_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_52">52</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;e_wara&nbsp;ZWJ&nbsp;by&nbsp;e_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_51">51</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;o_wara&nbsp;ZWJ&nbsp;by&nbsp;o_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_53">53</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;o_wara&nbsp;ZWJ&nbsp;by&nbsp;o_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_52">52</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ang_wara&nbsp;ZWJ&nbsp;by&nbsp;ang_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_54">54</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ang_wara&nbsp;ZWJ&nbsp;by&nbsp;ang_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_53">53</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ga_wara&nbsp;ZWJ&nbsp;by&nbsp;ga_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_55">55</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ga_wara&nbsp;ZWJ&nbsp;by&nbsp;ga_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_54">54</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ko_wara&nbsp;ZWJ&nbsp;by&nbsp;ko_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_56">56</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ko_wara&nbsp;ZWJ&nbsp;by&nbsp;ko_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_55">55</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;eny_wara&nbsp;ZWJ&nbsp;by&nbsp;eny_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_57">57</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;eny_wara&nbsp;ZWJ&nbsp;by&nbsp;eny_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_56">56</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;yuj_wara&nbsp;ZWJ&nbsp;by&nbsp;yuj_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_58">58</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;yuj_wara&nbsp;ZWJ&nbsp;by&nbsp;yuj_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_57">57</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uc_wara&nbsp;ZWJ&nbsp;by&nbsp;uc_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_59">59</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uc_wara&nbsp;ZWJ&nbsp;by&nbsp;uc_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_58">58</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;enn_wara&nbsp;ZWJ&nbsp;by&nbsp;enn_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_60">60</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;enn_wara&nbsp;ZWJ&nbsp;by&nbsp;enn_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_59">59</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;odd_wara&nbsp;ZWJ&nbsp;by&nbsp;odd_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_61">61</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;odd_wara&nbsp;ZWJ&nbsp;by&nbsp;odd_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_60">60</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;tte_wara&nbsp;ZWJ&nbsp;by&nbsp;tte_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_62">62</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;tte_wara&nbsp;ZWJ&nbsp;by&nbsp;tte_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_61">61</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;nung_wara&nbsp;ZWJ&nbsp;by&nbsp;nung_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_63">63</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;nung_wara&nbsp;ZWJ&nbsp;by&nbsp;nung_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_62">62</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;da_wara&nbsp;ZWJ&nbsp;by&nbsp;da_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_64">64</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;da_wara&nbsp;ZWJ&nbsp;by&nbsp;da_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_63">63</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;at_wara&nbsp;ZWJ&nbsp;by&nbsp;at_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_65">65</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;at_wara&nbsp;ZWJ&nbsp;by&nbsp;at_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_64">64</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;am_wara&nbsp;ZWJ&nbsp;by&nbsp;am_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_66">66</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;am_wara&nbsp;ZWJ&nbsp;by&nbsp;am_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_65">65</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;bu_wara&nbsp;ZWJ&nbsp;by&nbsp;bu_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_67">67</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;bu_wara&nbsp;ZWJ&nbsp;by&nbsp;bu_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_66">66</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;pu_wara&nbsp;ZWJ&nbsp;by&nbsp;pu_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_68">68</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;pu_wara&nbsp;ZWJ&nbsp;by&nbsp;pu_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_67">67</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;hiyo_wara&nbsp;ZWJ&nbsp;by&nbsp;hiyo_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_69">69</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;hiyo_wara&nbsp;ZWJ&nbsp;by&nbsp;hiyo_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_68">68</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;holo_wara&nbsp;ZWJ&nbsp;by&nbsp;holo_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_70">70</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;holo_wara&nbsp;ZWJ&nbsp;by&nbsp;holo_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_69">69</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;horr_wara&nbsp;ZWJ&nbsp;by&nbsp;horr_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_71">71</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;horr_wara&nbsp;ZWJ&nbsp;by&nbsp;horr_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_70">70</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;har_wara&nbsp;ZWJ&nbsp;by&nbsp;har_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_72">72</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;har_wara&nbsp;ZWJ&nbsp;by&nbsp;har_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_71">71</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ssuu_wara&nbsp;ZWJ&nbsp;by&nbsp;ssuu_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_73">73</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ssuu_wara&nbsp;ZWJ&nbsp;by&nbsp;ssuu_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_72">72</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;sii_wara&nbsp;ZWJ&nbsp;by&nbsp;sii_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_74">74</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;sii_wara&nbsp;ZWJ&nbsp;by&nbsp;sii_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_73">73</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;viyo_wara&nbsp;ZWJ&nbsp;by&nbsp;viyo_wara.sm;</td><td class="diff_next"></td><td class="diff_header" id="to0_75">75</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;viyo_wara&nbsp;ZWJ&nbsp;by&nbsp;viyo_wara.sm;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_74">74</td><td nowrap="nowrap">}&nbsp;LigatureSubstitution1;</td><td class="diff_next"></td><td class="diff_header" id="to0_76">76</td><td nowrap="nowrap">}&nbsp;LigatureSubstitution1;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_75">75</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_77">77</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_76">76</td><td nowrap="nowrap">lookup&nbsp;SingleSubstitution2&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to0_78">78</td><td nowrap="nowrap">lookup&nbsp;SingleSubstitution2&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_77">77</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;lookupflag&nbsp;0;</td><td class="diff_next"></td><td class="diff_header" id="to0_79">79</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;lookupflag&nbsp;0;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_78">78</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;;</td><td class="diff_next"></td><td class="diff_header" id="to0_80">80</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_79">79</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Original&nbsp;source:&nbsp;1&nbsp;</td><td class="diff_next"></td><td class="diff_header" id="to0_81">81</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Original&nbsp;source:&nbsp;1&nbsp;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_80">80</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;NGAA_wara&nbsp;by&nbsp;ngaa_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_82">82</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;NGAA_wara&nbsp;by&nbsp;ngaa_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_81">81</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ANG_wara&nbsp;by&nbsp;ang_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_83">83</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ANG_wara&nbsp;by&nbsp;ang_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_82">82</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;GA_wara&nbsp;by&nbsp;ga_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_84">84</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;GA_wara&nbsp;by&nbsp;ga_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_83">83</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;KO_wara&nbsp;by&nbsp;ko_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_85">85</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;KO_wara&nbsp;by&nbsp;ko_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_84">84</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ENY_wara&nbsp;by&nbsp;eny_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_86">86</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ENY_wara&nbsp;by&nbsp;eny_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_85">85</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;YUJ_wara&nbsp;by&nbsp;yuj_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_87">87</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;YUJ_wara&nbsp;by&nbsp;yuj_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_86">86</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;UC_wara&nbsp;by&nbsp;uc_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_88">88</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;UC_wara&nbsp;by&nbsp;uc_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_87">87</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ENN_wara&nbsp;by&nbsp;enn_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_89">89</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ENN_wara&nbsp;by&nbsp;enn_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_88">88</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ODD_wara&nbsp;by&nbsp;odd_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_90">90</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ODD_wara&nbsp;by&nbsp;odd_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_89">89</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;TTE_wara&nbsp;by&nbsp;tte_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_91">91</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;TTE_wara&nbsp;by&nbsp;tte_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_90">90</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;NUNG_wara&nbsp;by&nbsp;nung_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_92">92</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;NUNG_wara&nbsp;by&nbsp;nung_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_91">91</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;DA_wara&nbsp;by&nbsp;da_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_93">93</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;DA_wara&nbsp;by&nbsp;da_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_92">92</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;AT_wara&nbsp;by&nbsp;at_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_94">94</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;AT_wara&nbsp;by&nbsp;at_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_93">93</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;AM_wara&nbsp;by&nbsp;am_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_95">95</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;AM_wara&nbsp;by&nbsp;am_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_94">94</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;BU_wara&nbsp;by&nbsp;bu_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_96">96</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;BU_wara&nbsp;by&nbsp;bu_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_95">95</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;PU_wara&nbsp;by&nbsp;pu_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_97">97</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;PU_wara&nbsp;by&nbsp;pu_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_96">96</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;HIYO_wara&nbsp;by&nbsp;hiyo_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_98">98</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;HIYO_wara&nbsp;by&nbsp;hiyo_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_97">97</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;HOLO_wara&nbsp;by&nbsp;holo_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_99">99</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;HOLO_wara&nbsp;by&nbsp;holo_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_98">98</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;HORR_wara&nbsp;by&nbsp;horr_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_100">100</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;HORR_wara&nbsp;by&nbsp;horr_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_99">99</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;HAR_wara&nbsp;by&nbsp;har_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_101">101</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;HAR_wara&nbsp;by&nbsp;har_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_100">100</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;SSUU_wara&nbsp;by&nbsp;ssuu_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_102">102</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;SSUU_wara&nbsp;by&nbsp;ssuu_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_101">101</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;SII_wara&nbsp;by&nbsp;sii_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_103">103</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;SII_wara&nbsp;by&nbsp;sii_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_102">102</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;VIYO_wara&nbsp;by&nbsp;viyo_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_104">104</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;VIYO_wara&nbsp;by&nbsp;viyo_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_103">103</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ngaa_wara&nbsp;by&nbsp;ngaa_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_105">105</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ngaa_wara&nbsp;by&nbsp;ngaa_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_104">104</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ang_wara&nbsp;by&nbsp;ang_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_106">106</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ang_wara&nbsp;by&nbsp;ang_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_105">105</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ga_wara&nbsp;by&nbsp;ga_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_107">107</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ga_wara&nbsp;by&nbsp;ga_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_106">106</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ko_wara&nbsp;by&nbsp;ko_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_108">108</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ko_wara&nbsp;by&nbsp;ko_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_107">107</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;eny_wara&nbsp;by&nbsp;eny_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_109">109</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;eny_wara&nbsp;by&nbsp;eny_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_108">108</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;yuj_wara&nbsp;by&nbsp;yuj_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_110">110</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;yuj_wara&nbsp;by&nbsp;yuj_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_109">109</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uc_wara&nbsp;by&nbsp;uc_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_111">111</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;uc_wara&nbsp;by&nbsp;uc_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_110">110</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;enn_wara&nbsp;by&nbsp;enn_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_112">112</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;enn_wara&nbsp;by&nbsp;enn_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_111">111</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;odd_wara&nbsp;by&nbsp;odd_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_113">113</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;odd_wara&nbsp;by&nbsp;odd_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_112">112</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;tte_wara&nbsp;by&nbsp;tte_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_114">114</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;tte_wara&nbsp;by&nbsp;tte_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_113">113</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;nung_wara&nbsp;by&nbsp;nung_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_115">115</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;nung_wara&nbsp;by&nbsp;nung_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_114">114</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;da_wara&nbsp;by&nbsp;da_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_116">116</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;da_wara&nbsp;by&nbsp;da_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_115">115</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;at_wara&nbsp;by&nbsp;at_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_117">117</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;at_wara&nbsp;by&nbsp;at_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_116">116</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;am_wara&nbsp;by&nbsp;am_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_118">118</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;am_wara&nbsp;by&nbsp;am_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_117">117</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;bu_wara&nbsp;by&nbsp;bu_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_119">119</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;bu_wara&nbsp;by&nbsp;bu_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_118">118</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;pu_wara&nbsp;by&nbsp;pu_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_120">120</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;pu_wara&nbsp;by&nbsp;pu_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_119">119</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;hiyo_wara&nbsp;by&nbsp;hiyo_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_121">121</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;hiyo_wara&nbsp;by&nbsp;hiyo_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_120">120</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;holo_wara&nbsp;by&nbsp;holo_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_122">122</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;holo_wara&nbsp;by&nbsp;holo_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_121">121</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;horr_wara&nbsp;by&nbsp;horr_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_123">123</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;horr_wara&nbsp;by&nbsp;horr_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_122">122</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;har_wara&nbsp;by&nbsp;har_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_124">124</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;har_wara&nbsp;by&nbsp;har_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_123">123</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ssuu_wara&nbsp;by&nbsp;ssuu_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_125">125</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;ssuu_wara&nbsp;by&nbsp;ssuu_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_124">124</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;sii_wara&nbsp;by&nbsp;sii_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_126">126</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;sii_wara&nbsp;by&nbsp;sii_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_125">125</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;viyo_wara&nbsp;by&nbsp;viyo_wara.abv;</td><td class="diff_next"></td><td class="diff_header" id="to0_127">127</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;viyo_wara&nbsp;by&nbsp;viyo_wara.abv;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_126">126</td><td nowrap="nowrap">}&nbsp;SingleSubstitution2;</td><td class="diff_next"></td><td class="diff_header" id="to0_128">128</td><td nowrap="nowrap">}&nbsp;SingleSubstitution2;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_127">127</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_129">129</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_128">128</td><td nowrap="nowrap">lookup&nbsp;ChainedContextualGSUB3&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to0_130">130</td><td nowrap="nowrap">lookup&nbsp;ChainedContextualGSUB3&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_129">129</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;lookupflag&nbsp;0;</td><td class="diff_next"></td><td class="diff_header" id="to0_131">131</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;lookupflag&nbsp;0;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_130">130</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;;</td><td class="diff_next"></td><td class="diff_header" id="to0_132">132</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_131">131</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Original&nbsp;source:&nbsp;2&nbsp;</td><td class="diff_next"></td><td class="diff_header" id="to0_133">133</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Original&nbsp;source:&nbsp;2&nbsp;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_132">132</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;@class1'&nbsp;lookup&nbsp;LigatureSubstitution1&nbsp;ZWJ'&nbsp;@class2;</td><td class="diff_next"></td><td class="diff_header" id="to0_134">134</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;@class1'&nbsp;lookup&nbsp;LigatureSubstitution1&nbsp;ZWJ'&nbsp;@class2;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_133">133</td><td nowrap="nowrap">}&nbsp;ChainedContextualGSUB3;</td><td class="diff_next"></td><td class="diff_header" id="to0_135">135</td><td nowrap="nowrap">}&nbsp;ChainedContextualGSUB3;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_134">134</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_136">136</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_135">135</td><td nowrap="nowrap">lookup&nbsp;ChainedContextualGSUB4&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to0_137">137</td><td nowrap="nowrap">lookup&nbsp;ChainedContextualGSUB4&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_136">136</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;lookupflag&nbsp;0;</td><td class="diff_next"></td><td class="diff_header" id="to0_138">138</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;lookupflag&nbsp;0;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_137">137</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;;</td><td class="diff_next"></td><td class="diff_header" id="to0_139">139</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_138">138</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Original&nbsp;source:&nbsp;3&nbsp;</td><td class="diff_next"></td><td class="diff_header" id="to0_140">140</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Original&nbsp;source:&nbsp;3&nbsp;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_139">139</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;@class4&nbsp;@class2'&nbsp;lookup&nbsp;SingleSubstitution2;</td><td class="diff_next"></td><td class="diff_header" id="to0_141">141</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;@class4&nbsp;@class2'&nbsp;lookup&nbsp;SingleSubstitution2;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_140">140</td><td nowrap="nowrap">}&nbsp;ChainedContextualGSUB4;</td><td class="diff_next"></td><td class="diff_header" id="to0_142">142</td><td nowrap="nowrap">}&nbsp;ChainedContextualGSUB4;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_141">141</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_143">143</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_142">142</td><td nowrap="nowrap">lookup&nbsp;SingleSubstitution5&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to0_144">144</td><td nowrap="nowrap">lookup&nbsp;SingleSubstitution5&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_143">143</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;lookupflag&nbsp;0;</td><td class="diff_next"></td><td class="diff_header" id="to0_145">145</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;lookupflag&nbsp;0;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_144">144</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;;</td><td class="diff_next"></td><td class="diff_header" id="to0_146">146</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_145">145</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Original&nbsp;source:&nbsp;4&nbsp;</td><td class="diff_next"></td><td class="diff_header" id="to0_147">147</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Original&nbsp;source:&nbsp;4&nbsp;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_146">146</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;tte_wara.abv&nbsp;by&nbsp;tte_wara.abv.flip;</td><td class="diff_next"></td><td class="diff_header" id="to0_148">148</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;tte_wara.abv&nbsp;by&nbsp;tte_wara.abv.flip;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_147">147</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;pu_wara.abv&nbsp;by&nbsp;pu_wara.abv.flip;</td><td class="diff_next"></td><td class="diff_header" id="to0_149">149</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;pu_wara.abv&nbsp;by&nbsp;pu_wara.abv.flip;</td></tr>
+            <tr><td class="diff_next" id="difflib_chg_to0__1"></td><td class="diff_header" id="from0_148">148</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;holo_wara.abv&nbsp;by&nbsp;holo_wara.abv.flip;</td><td class="diff_next"></td><td class="diff_header" id="to0_150">150</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;holo_wara.abv&nbsp;by&nbsp;holo_wara.abv.flip;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_149">149</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;har_wara.abv&nbsp;by&nbsp;har_wara.abv.flip;</td><td class="diff_next"></td><td class="diff_header" id="to0_151">151</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;har_wara.abv&nbsp;by&nbsp;har_wara.abv.flip;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_150">150</td><td nowrap="nowrap">}&nbsp;SingleSubstitution5;</td><td class="diff_next"></td><td class="diff_header" id="to0_152">152</td><td nowrap="nowrap">}&nbsp;SingleSubstitution5;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_151">151</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_153">153</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_152">152</td><td nowrap="nowrap">feature&nbsp;ccmp&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to0_154">154</td><td nowrap="nowrap">feature&nbsp;ccmp&nbsp;{</td></tr>
+            <tr><td class="diff_next"><a href="#difflib_chg_to0__2">n</a></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"><a href="#difflib_chg_to0__2">n</a></td><td class="diff_header" id="to0_155">155</td><td nowrap="nowrap"><span class="diff_add">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;DFLT;</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_156">156</td><td nowrap="nowrap"><span class="diff_add">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_157">157</td><td nowrap="nowrap"><span class="diff_add">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;ChainedContextualGSUB3;</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_158">158</td><td nowrap="nowrap"><span class="diff_add">&nbsp;</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_159">159</td><td nowrap="nowrap"><span class="diff_add">}&nbsp;ccmp;</span></td></tr>
+            <tr><td class="diff_next" id="difflib_chg_to0__2"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_160">160</td><td nowrap="nowrap"><span class="diff_add">&nbsp;</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_161">161</td><td nowrap="nowrap"><span class="diff_add">feature&nbsp;ccmp&nbsp;{</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_153">153</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;wara;</td><td class="diff_next"></td><td class="diff_header" id="to0_162">162</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;wara;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_154">154</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to0_163">163</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_155">155</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;ChainedContextualGSUB3;</td><td class="diff_next"></td><td class="diff_header" id="to0_164">164</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;ChainedContextualGSUB3;</td></tr>
+            <tr><td class="diff_next"><a href="#difflib_chg_to0__3">n</a></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"><a href="#difflib_chg_to0__3">n</a></td><td class="diff_header" id="to0_165">165</td><td nowrap="nowrap"><span class="diff_add">&nbsp;</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_166">166</td><td nowrap="nowrap"><span class="diff_add">}&nbsp;ccmp;</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_167">167</td><td nowrap="nowrap"><span class="diff_add">&nbsp;</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_168">168</td><td nowrap="nowrap"><span class="diff_add">feature&nbsp;ccmp&nbsp;{</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_169">169</td><td nowrap="nowrap"><span class="diff_add">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;DFLT;</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_170">170</td><td nowrap="nowrap"><span class="diff_add">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_171">171</td><td nowrap="nowrap"><span class="diff_add">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;ChainedContextualGSUB4;</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_156">156</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_172">172</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_157">157</td><td nowrap="nowrap">}&nbsp;ccmp;</td><td class="diff_next"></td><td class="diff_header" id="to0_173">173</td><td nowrap="nowrap">}&nbsp;ccmp;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_158">158</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_174">174</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_159">159</td><td nowrap="nowrap">feature&nbsp;ccmp&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to0_175">175</td><td nowrap="nowrap">feature&nbsp;ccmp&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_160">160</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;wara;</td><td class="diff_next"></td><td class="diff_header" id="to0_176">176</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;wara;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_161">161</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to0_177">177</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next" id="difflib_chg_to0__3"></td><td class="diff_header" id="from0_162">162</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;ChainedContextualGSUB4;</td><td class="diff_next"></td><td class="diff_header" id="to0_178">178</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;ChainedContextualGSUB4;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_163">163</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_179">179</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_164">164</td><td nowrap="nowrap">}&nbsp;ccmp;</td><td class="diff_next"></td><td class="diff_header" id="to0_180">180</td><td nowrap="nowrap">}&nbsp;ccmp;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_165">165</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_181">181</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_166">166</td><td nowrap="nowrap">feature&nbsp;ccmp&nbsp;{</td><td class="diff_next"></td><td class="diff_header" id="to0_182">182</td><td nowrap="nowrap">feature&nbsp;ccmp&nbsp;{</td></tr>
+            <tr><td class="diff_next"><a href="#difflib_chg_to0__top">t</a></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"><a href="#difflib_chg_to0__top">t</a></td><td class="diff_header" id="to0_183">183</td><td nowrap="nowrap"><span class="diff_add">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;DFLT;</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_184">184</td><td nowrap="nowrap"><span class="diff_add">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_185">185</td><td nowrap="nowrap"><span class="diff_add">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;SingleSubstitution5;</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_186">186</td><td nowrap="nowrap"><span class="diff_add">&nbsp;</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_187">187</td><td nowrap="nowrap"><span class="diff_add">}&nbsp;ccmp;</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_188">188</td><td nowrap="nowrap"><span class="diff_add">&nbsp;</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_189">189</td><td nowrap="nowrap"><span class="diff_add">feature&nbsp;ccmp&nbsp;{</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_167">167</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;wara;</td><td class="diff_next"></td><td class="diff_header" id="to0_190">190</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;script&nbsp;wara;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_168">168</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td><td class="diff_next"></td><td class="diff_header" id="to0_191">191</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;language&nbsp;dflt;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_169">169</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;SingleSubstitution5;</td><td class="diff_next"></td><td class="diff_header" id="to0_192">192</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup&nbsp;SingleSubstitution5;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_170">170</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_193">193</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_171">171</td><td nowrap="nowrap">}&nbsp;ccmp;</td><td class="diff_next"></td><td class="diff_header" id="to0_194">194</td><td nowrap="nowrap">}&nbsp;ccmp;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_172">172</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_195">195</td><td nowrap="nowrap"></td></tr>
+        </tbody>
+    </table>
+    <table class="diff" summary="Legends">
+        <tr> <th colspan="2"> Legends </th> </tr>
+        <tr> <td> <table border="" summary="Colors">
+                      <tr><th> Colors </th> </tr>
+                      <tr><td class="diff_add">&nbsp;Added&nbsp;</td></tr>
+                      <tr><td class="diff_chg">Changed</td> </tr>
+                      <tr><td class="diff_sub">Deleted</td> </tr>
+                  </table></td>
+             <td> <table border="" summary="Links">
+                      <tr><th colspan="2"> Links </th> </tr>
+                      <tr><td>(f)irst change</td> </tr>
+                      <tr><td>(n)ext change</td> </tr>
+                      <tr><td>(t)op</td> </tr>
+                  </table></td> </tr>
+    </table>
+</body>
+
+</html>
+    </div>
+    
+
+    </div>
+</body>
+	<script>
+
+	POSITION = "before"
+	fontToggle = document.getElementById("font-toggle")
+	function switchFonts() {
+	  items = document.getElementsByClassName("box");
+	  console.log("Click from "+POSITION)
+	  
+	  if (POSITION === "before") {
+	  POSITION = "after"
+	  for (item of items) {
+	    item.firstElementChild.textContent = item.firstElementChild.textContent.replace("before", "after")
+            item.lastElementChild.className = item.lastElementChild.className.replace("before", "after")
+	    fontToggle.textContent = "After"
+	  }
+	  } else if (POSITION === "after") {
+	  POSITION = "both"
+	  for (item of items) {
+	    item.firstElementChild.textContent = item.firstElementChild.textContent.replace("after", "both")
+            item.lastElementChild.className = item.lastElementChild.className.replace("after", "both")
+	    fontToggle.textContent = "Both"
+	  }
+
+	  } else {
+	  POSITION = "before"
+	  for (item of items) {
+	    item.firstElementChild.textContent = item.firstElementChild.textContent.replace("both", "before")
+            item.lastElementChild.className = item.lastElementChild.className.replace("both", "before")
+	    fontToggle.textContent = "Before"
+	  }
+	}
+	}
+	fontToggle.addEventListener("click", switchFonts);
+	</script>
+    <script>
+    const divs = document.querySelectorAll('.node');
+    divs.forEach(el => el.addEventListener('click', event => {
+    var children = event.target.querySelectorAll(".node");
+    children.forEach(function(e) {
+        if (e.style.display === "none") {
+            e.style.display = "block";
+        } else {
+            e.style.display = "none";
+        }
+    })
+    }));
+    </script>
+</html>
