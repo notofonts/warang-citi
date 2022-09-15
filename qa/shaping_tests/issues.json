@@ -1,0 +1,10 @@
+{
+	"tests": [
+		{
+			"expectation": "WI_wara.sm=0+658|ko_wara.abv=2@-311,688+0",
+			"input": "𑢢‍𑣌",
+			"note": "Check marks are behaving as marks and attaching",
+			"only": "NotoSansWarangCiti-Regular.ttf"
+		}
+	]
+}
